@@ -19,12 +19,15 @@ class ProductListing extends StatelessWidget {
         itemCount: productImages.length,
         itemBuilder: (BuildContext context, int index) => Container(
           decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(productImages[index]))),
+              image: DecorationImage(
+            image: AssetImage(productImages[index]),
+            fit: BoxFit.cover,
+          )),
         ),
         staggeredTileBuilder: (int index) =>
             StaggeredTile.count(2, index.isFinite ? 3 : 3),
-        mainAxisSpacing: 4.0,
-        crossAxisSpacing: 4.0,
+        mainAxisSpacing: 10.0,
+        crossAxisSpacing: 10.0,
       ),
     );
   }
