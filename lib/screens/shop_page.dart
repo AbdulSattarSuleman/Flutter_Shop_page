@@ -12,6 +12,7 @@ class ShopPageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        excludeHeaderSemantics: true,
         elevation: 0.0,
         backgroundColor: Colors.white,
         title: Text(

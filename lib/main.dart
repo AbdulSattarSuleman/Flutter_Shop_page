@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Ecommerce App',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.yellow),
       home: ShopPageScreen(),
     );
   }
