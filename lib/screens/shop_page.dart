@@ -26,12 +26,13 @@ class ShopPageScreen extends StatelessWidget {
             child: CircleAvatar(
               backgroundImage: AssetImage('assets/images/abdul.jpg'),
             ),
-          )
+          ),
+          Text(data);
         ],
       ),
       drawer: Drawer(
-        backgroundColor: Colors.amber,
-      ),
+          // backgroundColor: Colors.amber,
+          ),
       body: ListView(
         // ignore: prefer_const_literals_to_create_immutables
         children: [
